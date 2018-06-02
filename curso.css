@@ -1,6 +1,9 @@
-.curso-body{
+htm{
     height: 100%;
     overflow: hidden;
+}
+
+body{
     color: #fff;
     margin: 0;
     padding: 0;
@@ -37,5 +40,21 @@ header::before{
     right: 0;
     top: 0;
     display: block;
-    background-image: url();
+    background-image: url(curso.jpg);    
+    background-size: cover;
+    transform-origin: center center 0;
+    transform:  translateZ(-1px)  scale(2);
+    z-index: -1;
+    min-height: 100vh;
+
+}
+
+header *{
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+
+
 }

@@ -1,7 +1,7 @@
 body{ 
     margin: 0;
     padding: 0; /*espacio de relleno requerido*/
-    background: url(bosque.jpg) no-repeat;
+    background: url(opinion.jpg) no-repeat;
     background-size: cover;  /*Escala la imagen al mayor tamaño posible sin recortarla ni estirarla.*/
     }
     
@@ -107,8 +107,12 @@ body{
       animation-delay: 2s;
     }
     
+       
 .next{
     align-content: center;
 }
+    
+    
+    
     
     

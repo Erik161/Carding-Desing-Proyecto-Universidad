@@ -1,6 +1,6 @@
 body{ 
     margin: 0;
-    padding: 0;
+    padding: 0; /*espacio de relleno requerido*/
     background: url(bosque.jpg) no-repeat;
     background-size: cover;  /*Escala la imagen al mayor tamaño posible sin recortarla ni estirarla.*/
     }
@@ -28,17 +28,17 @@ body{
     *
     */
     .box h1{
-      font-size: 40px;
+      font-size: 40px; /*Tamaño de la letra*/ 
       letter-spacing: 4px; /*efecto espaciado entre en medio de las letras */
       font-weight: 100;
     }
     .box h5{
-      font-size:20px;
+      font-size:20px; /*permite establecer el tamaño de letra del texto*/
       letter-spacing: 3px; /*efecto espaciado entre en medio de las letras */
-      font-weight: 100;
+      font-weight: 100; /*Especifica el grueso de la letra*/
     }
     .box p{
-      text-align: justify;
+      text-align: justify;/*orientacion de la letra*/
     }
     
     
@@ -48,7 +48,7 @@ body{
     */
     ul{
       margin:0;
-      padding:0;
+      padding:0; /*espacio de relleno requerido*/
     }
     .box li{
       display: inline-block;
@@ -57,33 +57,34 @@ body{
     }
     .box li a{
       color: white;
-      font-size:50px;
-      text-decoration:none;
-      transition: all ease-int-out 250ms;
+      font-size:50px; /*permite establecer el tamaño de letra del texto*/
+      text-decoration:none; /*establece la decoracion que se aplica en el texto*/
+      transition: all ease-int-out 250ms; /*crear transiciones suaves entre diferentes valores de las propiedades CSS*/
     }
     /*Color de los iconos con efecto Hover*/
     
-    .facebookcolor:hover{
+    .facebookcolor:hover{ /*Hover es la propiedad al pasar el puntero del mouse realiza tal accion*/
     color:#201ea8;
     }
     
-    .githubcolor:hover{
+    .githubcolor:hover{ /*Hover es la propiedad al pasar el puntero del mouse realiza tal accion*/
       color:#a220bb;
     }
     
-    .twittercolor:hover{
+    .twittercolor:hover{ /*Hover es la propiedad al pasar el puntero del mouse realiza tal accion*/
       color:#0ebeff;
     }
     
-    .instagramcolor:hover{
+    .instagramcolor:hover{ /*Hover es la propiedad al pasar el puntero del mouse realiza tal accion*/
       color:#ec0727;
     }
     
     
     /*RETRASO DE ANIMATE */
     
+    /* para chrome, safari, Firefox*/
     .retraso-1{
-      webkit-animation-delay: 0.5s; /*especifica*/
+      webkit-animation-delay: 0.5s; /*especifica el tiempo de retardo que debe transcurrir antes de comenzar la animación*/
       -moz-animation-delay: 0.5s;
       animation-delay: 0.5s;
     }

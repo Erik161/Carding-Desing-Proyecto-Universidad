@@ -1,60 +1,118 @@
-htm{
-    height: 100%;
-    overflow: hidden;
-}
-
-body{
-    color: #fff;
+body{ 
     margin: 0;
-    padding: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: "Luna";
+    padding: 0; /*espacio de relleno requerido*/
+    background: url(curso.jpg) no-repeat;
+    background-size: cover;  /*Escala la imagen al mayor tamaño posible sin recortarla ni estirarla.*/
+    }
+    
+    /*estructura del cuadrito*/
+    .box{
+      width: 450px; /*permite establecer su anchura  mediante una medida*/
+      background: rgba(0,0,0,0.4); /*Red Green Blue|usado para colores semi-transparentes */
+      padding: 40px; /*espacio de relleno requerido*/
+      text-align: center; /*selecciona en que direccion queremos agregar nuestro texto*/
+      margin: auto; 
+      margin-top: 5%; /*Establece la anchhura de mi margen superior*/
+      color: white; /*Color para la letra*/
+      font-family: 'century Gothic',sans-serif;/*Estilo de la letra*/
+    }
+    
+    /*estructura de la imagen*/
+    .box-img{
+      border-radius:50%; /*borde redondo*/
+      width: 200px; /*permite establecer su anchura directamente mediante una medida*/
+      height: 200px; /*especifica la altura del area de contenido de un elemento*/
+    }
+    
+    /*Estructura del texto
+    *
+    */
+    .box h1{
+      font-size: 40px; /*Tamaño de la letra*/ 
+      letter-spacing: 4px; /*efecto espaciado entre en medio de las letras */
+      font-weight: 100;
+    }
+    .box h5{
+      font-size:20px; /*permite establecer el tamaño de letra del texto*/
+      letter-spacing: 3px; /*efecto espaciado entre en medio de las letras */
+      font-weight: 100; /*Especifica el grueso de la letra*/
+    }
+    .box p{
+      text-align: justify;/*orientacion de la letra*/
+    }
+    
+    
+    /*Estructura iconos
+    *color,tamaño,estilo
+    *efecto hover.
+    */
+    ul{
+      margin:0;
+      padding:0; /*espacio de relleno requerido*/
+    }
+    .box li{
+      display: inline-block;
+      margin: 6px;
+      list-style: none;
+    }
+    .box li a{
+      color: white;
+      font-size:50px; /*permite establecer el tamaño de letra del texto*/
+      text-decoration:none; /*establece la decoracion que se aplica en el texto*/
+      transition: all ease-int-out 250ms; /*crear transiciones suaves entre diferentes valores de las propiedades CSS*/
+    }
+    /*Color de los iconos con efecto Hover*/
+    
+    .facebookcolor:hover{ /*Hover es la propiedad al pasar el puntero del mouse realiza tal accion*/
+    color:#201ea8;
+    }
+    
+    .githubcolor:hover{ /*Hover es la propiedad al pasar el puntero del mouse realiza tal accion*/
+      color:#a220bb;
+    }
+    
+    .twittercolor:hover{ /*Hover es la propiedad al pasar el puntero del mouse realiza tal accion*/
+      color:#0ebeff;
+    }
+    
+    .instagramcolor:hover{ /*Hover es la propiedad al pasar el puntero del mouse realiza tal accion*/
+      color:#ec0727;
+    }
+    
+    
+    /*RETRASO DE ANIMATE */
+    
+    /* para chrome, safari, Firefox*/
+    .retraso-1{
+      webkit-animation-delay: 0.5s; /*especifica el tiempo de retardo que debe transcurrir antes de comenzar la animación*/
+      -moz-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+    }
+    
+    .retraso-2{
+      webkit-animation-delay: 1s;
+      -moz-animation-delay: 1s;
+      animation-delay: 1s;
+    }
+    
+    .retraso-3{
+      webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+      animation-delay: 1.5s;
+    }
+    
+    .retraso-4{
+      webkit-animation-delay: 2s;
+      -moz-animation-delay: 2s;
+      animation-delay: 2s;
+    }
+    
+       
+.next{
+    align-content: center;
 }
-
-header{
-    box-sizing: border-box;
-    min-height: 100vh;
-    padding: 30vw 0 5vw;
-    position: relative;
-    transform-style: inherit;
-    width: 100vw;
-}
-
-header h1{
-    margin-top: -100px;
-}
-
-header, header:before{
-    background: 50% 50% / cover;
-}
-
-header::before{
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-    background-image: url(curso.jpg);    
-    background-size: cover;
-    transform-origin: center center 0;
-    transform:  translateZ(-1px)  scale(2);
-    z-index: -1;
-    min-height: 100vh;
-
-}
-
-header *{
-    font-weight: normal;
-    letter-spacing: 0.2em;
-    text-align: center;
-    margin: 0;
-    padding: 1em 0;
-
-
-}
+    
+    
+    
+    
+    

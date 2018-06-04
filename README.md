@@ -1,5 +1,5 @@
 # Carding-Desing-Proyecto-Universidad
- > presentecion del curso de  introducción a sistemas de computo
+ > Presentecion del curso de  Introducción a los Sistemas de computación
  
  
 ## PREVIEW
